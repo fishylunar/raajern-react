@@ -11,7 +11,7 @@ import { Label } from "@/components/ui/label";
 export function Contact() {
   return (
     <div className="w-screen max-w-md mx-auto">
-    <Card className="w-full min-w-md mx-auto bg-white/90 backdrop-blur-sm border-gray-200 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+    <Card className="w-full max-w-md mx-auto bg-white/90 backdrop-blur-sm border-gray-200 shadow-xl hover:shadow-2xl transition-shadow duration-300">
       <CardHeader className="border-b border-gray-100 pb-4">
         <CardTitle className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
