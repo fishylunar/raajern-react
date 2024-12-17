@@ -72,7 +72,7 @@ export function Services() {
         <CardHeader>
           <CardTitle className="flex items-center">
             <CheckCircle className="mr-3 text-blue-600" />
-            Vores Specialer
+            Faggrupper vi dækker
           </CardTitle>
         </CardHeader>
         <CardContent className="h-96 overflow-y-auto">
@@ -132,30 +132,22 @@ export function Services() {
         <CardHeader>
           <CardTitle className="flex items-center">
             <Building className="mr-3 text-blue-600" />
-            Geotekniske Konstruktioner
+            Udarbejdelse af statisk dokumentation
           </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="space-y-3 bg-gray-50 p-3 rounded-lg">
             <div className="flex items-center">
               <CheckCircle className="mr-3 text-green-500" />
-              <span>Funderingspæle</span>
+              <span>B2.2.2.x Statisk kontrolplan udførelse arbejde</span>
             </div>
             <div className="flex items-center">
               <CheckCircle className="mr-3 text-green-500" />
-              <span>Spuns</span>
+              <span>B3.2.2.x Statisk kontrolrapport udførelse arbejde </span>
             </div>
             <div className="flex items-center">
               <CheckCircle className="mr-3 text-green-500" />
-              <span>KBH-vægge</span>
-            </div>
-            <div className="flex items-center">
-              <CheckCircle className="mr-3 text-green-500" />
-              <span>Borede pæle</span>
-            </div>
-            <div className="flex items-center">
-              <CheckCircle className="mr-3 text-green-500" />
-              <span>Jordankre</span>
+              <span>A5.x Konstruktion som udført arbejde</span>
             </div>
           </div>
         </CardContent>

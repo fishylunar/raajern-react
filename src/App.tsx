@@ -36,7 +36,7 @@ const App = () => {
             </button>
             <button
               onClick={() => setActiveTab("contact")}
-              className={`px-3 py-2 ${
+              className={`px-3 py-2  ${
                 activeTab === "contact"
                   ? "text-blue-600 font-bold"
                   : "text-gray-600"
