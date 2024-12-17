@@ -68,7 +68,7 @@ const App = () => {
   const [activeTab, setActiveTab] = useState("services");
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Navigation */}
       <nav className="bg-white shadow-md">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-center items-center">
@@ -112,10 +112,10 @@ const App = () => {
         {activeTab === "services" && (
           <>
             <header className="max-w-6xl mx-auto px-4 py-8 text-center">
-              <h1 className="text-6xl font-bold mb-4 header">
+              <h1 className="text-6xl font-bold mb-4 header bungee-inline-regular text-white">
                 Ingenørfirmaet Raajern
               </h1>
-              <p className="text-lg leading-normal">
+              <p className="text-lg leading-normal text-white">
                 Ingeniørfaglig præcision – Planlægning, kontrol og dokumentation
                 i hele Danmark
               </p>

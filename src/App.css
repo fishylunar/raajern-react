@@ -77,7 +77,11 @@
   width: 100%;
   padding: 10px;
 }
-
+.bungee-inline-regular {
+  font-family: "Bungee Inline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 @media screen and (max-width: 600px) {
   .footer {
     position: relative;
@@ -87,7 +91,7 @@
 }
 
 .header {
-  font-size: 64px;
+  font-size: 90px;
 }
 
 @media screen and (max-width: 600px) {
@@ -101,4 +105,14 @@
 
 body {
   zoom: 0.75;
+  background-color: #06c;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 2px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.2) 2px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
