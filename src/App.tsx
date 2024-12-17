@@ -112,7 +112,7 @@ const App = () => {
         {activeTab === "services" && (
           <>
             <header className="max-w-6xl mx-auto px-4 py-8 text-center">
-              <h1 className="text-6xl font-bold mb-4">
+              <h1 className="text-6xl font-bold mb-4 header">
                 Ingenørfirmaet Raajern
               </h1>
               <p className="text-lg leading-normal">
@@ -287,7 +287,7 @@ const App = () => {
       </main>
 
       {/* Footer */}
-      <footer className="sticky-footer bg-blue-800 text-white py-6 mt-8">
+      <footer className="sticky-footer bg-blue-800 text-white py-6 mt-8 footer">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p>
             &copy; 2024 Raajern. Alle rettigheder forbeholdt. - CVR: 38609858
