@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Header } from '@/components/Header';
 
 const specialtyAreas = [
   {
@@ -57,15 +58,7 @@ const specialtyAreas = [
 export function Services() {
   return (
     <>
-    <header className="max-w-6xl mx-auto px-4 py-8 text-center">
-      <h1 className="text-6xl font-bold mb-4 header bungee-inline-regular text-white">
-        Ingenørfirmaet Raajern
-      </h1>
-      <p className="text-lg leading-normal text-white">
-        Ingeniørfaglig præcision – Planlægning, kontrol og dokumentation
-        i hele Danmark
-      </p>
-    </header>
+    <Header />
     <div className="grid md:grid-cols-2 gap-8">
       {/* Services Card */}
       <Card className="bg-white/90 backdrop-blur-sm border-gray-200 shadow-xl hover:shadow-2xl transition-shadow duration-300">
