@@ -6,17 +6,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
 import {
-  Phone,
-  Mail,
   CheckCircle,
   BookOpen,
   Globe,
   Building,
 } from "lucide-react";
 import "./App.css";
-
+import { Courses } from "@/components/views/Courses";
+import { Contact } from "@/components/views/Contact";
 const specialtyAreas = [
   {
     title: "Jordarbejde",
@@ -68,7 +66,7 @@ const App = () => {
   const [activeTab, setActiveTab] = useState("services");
 
   return (
-    <div className="min-h-screen">
+    <div className="relative min-h-screen flex flex-col">
       {/* Navigation */}
       <nav className="bg-white shadow-md">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-center items-center">
@@ -108,7 +106,7 @@ const App = () => {
       </nav>
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-4 py-8">
+      <main className="max-w-6xl mx-auto px-4 py-8 flex-grow">
         {activeTab === "services" && (
           <>
             <header className="max-w-6xl mx-auto px-4 py-8 text-center">
@@ -215,85 +213,26 @@ const App = () => {
         )}
 
         {activeTab === "courses" && (
-          <Card className="bg-white shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center">
-                <BookOpen className="mr-3 text-blue-600" />
-                Kurser
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <p className="text-gray-700">
-                  Vi tilbyder specialtilpassede kurser inden for planlægning,
-                  udførelse og dokumentation af kontrol.
-                </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <h3 className="font-semibold mb-2">Kursussteder</h3>
-                    <ul className="list-disc pl-5">
-                      <li>Firmaadressen</li>
-                      <li>Flere lokationer landet over</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">
-                      Registreringsplatforme
-                    </h3>
-                    <ul className="list-disc pl-5">
-                      <li>Dalux</li>
-                      <li>Ajour</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          <Courses />
         )}
 
         {activeTab === "contact" && (
-          <Card className="bg-white shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center">
-                <Phone className="mr-3 text-blue-600" />
-                Kontakt Os
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <Mail className="mr-3 text-blue-500" />
-                  <a
-                    href="mailto:info@raajern.dk"
-                    className="text-blue-700 hover:underline"
-                  >
-                    info@raajern.dk
-                  </a>
-                </div>
-                <div className="flex items-center">
-                  <Phone className="mr-3 text-blue-500" />
-                  <a
-                    href="tel:+4520322553"
-                    className="text-blue-700 hover:underline"
-                  >
-                    2032 2553
-                  </a>
-                </div>
-                <Button className="w-full mt-4">Send Besked</Button>
-              </div>
-            </CardContent>
-          </Card>
+          <Contact />
         )}
       </main>
 
-      {/* Footer */}
-      <footer className="sticky-footer bg-blue-800 text-white py-6 mt-8 footer">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <p>
-            &copy; 2024 Raajern. Alle rettigheder forbeholdt. - CVR: 38609858
-          </p>
-        </div>
-      </footer>
+{/* Footer */}
+<footer className="sticky-footer bg-blue-800 text-white py-6 mt-8 footer 
+  absolute bottom-0 left-0 right-0 
+  min-h-[60px] 
+  flex items-center
+  w-full">
+  <div className="max-w-6xl mx-auto px-4 text-center">
+    <p>
+      &copy; 2024 Raajern. Alle rettigheder forbeholdt. - CVR: 38609858
+    </p>
+  </div>
+</footer>
     </div>
   );
 };
