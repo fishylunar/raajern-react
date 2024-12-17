@@ -98,13 +98,10 @@
   .header {
     font-size: 34px;
   }
-  body {
-    zoom: 0.9;
-  }
 }
 
 body {
-  zoom: 0.7;
+  zoom: 0.78;
   background-color: #06c;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.2) 2px,

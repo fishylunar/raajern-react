@@ -10,8 +10,8 @@ import { Label } from "@/components/ui/label";
 
 export function Contact() {
   return (
-    <div className="w-screen max-w-screen-sm mx-auto">
-    <Card className="w-full max-w-md mx-auto bg-white/90 backdrop-blur-sm border-gray-200 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+    <div>
+    <Card className="w-full max-w-4xl mx-auto bg-white/90 backdrop-blur-sm border-gray-200 shadow-xl hover:shadow-2xl transition-shadow duration-300">
       <CardHeader className="border-b border-gray-100 pb-4">
         <CardTitle className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
@@ -44,7 +44,7 @@ export function Contact() {
 <Button 
   variant="outline" 
   className="w-full bg-gray-50 border-gray-200 text-blue-700 hover:bg-blue-100 flex items-center justify-center text-base"
-  onClick={() => window.open('https://www.linkedin.com/company/raajern', '_blank')}
+  onClick={() => window.open('https://www.linkedin.com/in/tobias-lerche-kjeldsen-82706279', '_blank')}
 >
   <SiLinkedin className="w-6 h-6 mr-3 text-blue-600" />
   LinkedIn

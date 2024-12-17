@@ -2,6 +2,7 @@ import { BookOpen, MapPin, Monitor } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+
 export function Courses() {
   return (
     <Card className="w-full max-w-4xl mx-auto bg-white/90 backdrop-blur-sm border-gray-200 shadow-xl hover:shadow-2xl transition-shadow duration-300">

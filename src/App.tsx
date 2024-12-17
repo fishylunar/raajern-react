@@ -9,7 +9,7 @@ const App = () => {
   const [activeTab, setActiveTab] = useState("services");
 
   return (
-    <div className="relative min-h-screen flex flex-col">
+    <div className="relative">
       {/* Navigation */}
       <nav className="bg-white shadow-md">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-center items-center">
@@ -49,7 +49,7 @@ const App = () => {
       </nav>
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-4 py-8 flex-grow">
+      <main className="max-w-6xl mx-auto px-4 py-8 flex-grow min-h-screen flex flex-col">
         {activeTab === "services" && <Services />}
 
         {activeTab === "courses" && <Courses />}
