@@ -50,8 +50,8 @@ export function Contact() {
   LinkedIn
 </Button>
         </div>
-        
-        <Dialog>
+        {/* 
+                <Dialog>
           <DialogTrigger asChild>
             <Button className="w-full flex items-center justify-center space-x-2">
               <Send className="w-4 h-4" />
@@ -91,6 +91,7 @@ export function Contact() {
             </div>
           </DialogContent>
         </Dialog>
+        */}
       </CardContent>
     </Card>
     </div>

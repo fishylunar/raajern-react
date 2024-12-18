@@ -1,4 +1,4 @@
-import { BookOpen, MapPin, Monitor, Clock, CreditCard } from "lucide-react";
+import { BookOpen, Monitor, Clock, CreditCard } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -63,7 +63,7 @@ export function Courses() {
         </CardTitle>
       </CardHeader>
       <CardContent className="p-6">
-        <div className="space-y-6 bg-gray-50 p-4 rounded-lg">
+        <div className="space-y-6">
           <p className="text-gray-600 leading-relaxed">
             Vi tilbyder specialtilpassede kurser inden for planlægning, udførelse og dokumentation af kontrol.
           </p>
@@ -71,13 +71,13 @@ export function Courses() {
           <Accordion type="single" collapsible className="w-full">
             {courses.map((course, index) => (
               <AccordionItem value={`item-${index}`} key={index}>
-                <AccordionTrigger className="hover:bg-gray-50 px-4 py-3 rounded-lg">
+                <AccordionTrigger className="hover:bg-gray-50 px-4 py-3 rounded-lg bg-white">
                   <div className="flex items-center space-x-4">
                     <BookOpen className="w-5 h-5 text-blue-500" />
                     <span className="font-semibold text-gray-800">{course.name}</span>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="px-4 py-4">
+                <AccordionContent className="px-4 py-4 bg-white rounded-lg">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <div className="flex items-center mb-2">
@@ -113,37 +113,21 @@ export function Courses() {
             ))}
           </Accordion>
 
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <div className="flex items-center mb-3">
-                <MapPin className="w-5 h-5 mr-2 text-blue-500" />
-                <h3 className="font-semibold text-gray-800">Kursussteder</h3>
-              </div>
-              <ul className="space-y-1 text-gray-600 pl-7">
-                <li className="relative before:absolute before:left-[-1.25rem] before:top-2 before:w-2 before:h-2 before:bg-blue-400 before:rounded-full">
-                  Firmaadressen
-                </li>
-                <li className="relative before:absolute before:left-[-1.25rem] before:top-2 before:w-2 before:h-2 before:bg-blue-400 before:rounded-full">
-                  Flere lokationer landet over
-                </li>
-              </ul>
+          <div className="mt-4 bg-gray-50 p-4 rounded-lg w-full">
+            <div className="flex items-center mb-3">
+              <Monitor className="w-5 h-5 mr-2 text-green-500" />
+              <h3 className="font-semibold text-gray-800">
+                Introduktion til anvendelse af førende registreringsplatforme
+              </h3>
             </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <div className="flex items-center mb-3">
-                <Monitor className="w-5 h-5 mr-2 text-green-500" />
-                <h3 className="font-semibold text-gray-800">
-                  Registreringsplatforme
-                </h3>
-              </div>
-              <ul className="space-y-1 text-gray-600 pl-7">
-                <li className="relative before:absolute before:left-[-1.25rem] before:top-2 before:w-2 before:h-2 before:bg-green-400 before:rounded-full">
-                  Dalux
-                </li>
-                <li className="relative before:absolute before:left-[-1.25rem] before:top-2 before:w-2 before:h-2 before:bg-green-400 before:rounded-full">
-                  Ajour
-                </li>
-              </ul>
-            </div>
+            <ul className="space-y-1 text-gray-600 pl-7">
+              <li className="relative before:absolute before:left-[-1.25rem] before:top-2 before:w-2 before:h-2 before:bg-green-400 before:rounded-full">
+                Dalux
+              </li>
+              <li className="relative before:absolute before:left-[-1.25rem] before:top-2 before:w-2 before:h-2 before:bg-green-400 before:rounded-full">
+                Ajour
+              </li>
+            </ul>
           </div>
         </div>
       </CardContent>
