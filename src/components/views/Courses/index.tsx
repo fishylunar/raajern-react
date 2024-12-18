@@ -63,7 +63,7 @@ export function Courses() {
         </CardTitle>
       </CardHeader>
       <CardContent className="p-6">
-        <div className="space-y-6">
+        <div className="space-y-6 bg-gray-50 p-4 rounded-lg">
           <p className="text-gray-600 leading-relaxed">
             Vi tilbyder specialtilpassede kurser inden for planlægning, udførelse og dokumentation af kontrol.
           </p>
