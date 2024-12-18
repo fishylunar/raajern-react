@@ -23,11 +23,25 @@
     />
     <meta name="mobile-web-app-capable" content="yes" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- connect to domain of font files -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- async CSS (optionally increase loading priority with fetchpriority="high") -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Rubik:ital,wght@0,300..900;1,300..900&family=Skranji:wght@400;700&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Rubik:ital,wght@0,300..900;1,300..900&family=Skranji:wght@400;700&display=swap"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+      fetchpriority="high"
     />
+
+    <!-- no-JS fallback -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Rubik:ital,wght@0,300..900;1,300..900&family=Skranji:wght@400;700&display=swap"
+      />
+    </noscript>
 
     <title>Raajern</title>
     <!-- Primary Meta Tags -->
