@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ContactRound, Phone, Mail, Send } from "lucide-react";
+import { ContactRound, Phone, Mail } from "lucide-react";
 import { SiLinkedin } from '@icons-pack/react-simple-icons';
 
 import { Button } from "@/components/ui/button";
