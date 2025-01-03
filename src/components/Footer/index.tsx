@@ -7,7 +7,7 @@ export function Footer() {
   w-full">
   <div className="max-w-6xl mx-auto px-4 text-center">
     <p>
-      &copy; 2024 Raajern. Alle rettigheder forbeholdt. - CVR: 38609858
+      &copy; {new Date().getFullYear()} Raajern. Alle rettigheder forbeholdt. - CVR: 38609858
     </p>
   </div>
 </footer>
